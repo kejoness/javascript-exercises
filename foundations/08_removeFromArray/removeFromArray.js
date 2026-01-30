@@ -1,11 +1,14 @@
 const removeFromArray = function(args, ...arrayElements) {
 
     for(let arg of args) {
-        if (args.includes(arrayElements)) {
-            args.splice(args.indexOf(arrayElements), arrayElements);
-        } else {
-            console.log("That element does not exist!");
+        for(let element of arrayElements) {
+            if (args.includes(element)) {
+                args.splice(args.indexOf(element), 1);
+            } else {
+                console.log("That element does not exist!");
+            }
         }
+        
     }
 };
 
