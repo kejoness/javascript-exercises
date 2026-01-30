@@ -8,12 +8,13 @@ const removeFromArray = function(args, ...arrayElements) {
                 console.log("That element does not exist!");
             }
         }
-        
     }
+    return args;
 };
 
-let numbers = [1, 2, 3, 4];
-removeFromArray(numbers, 1);
+// let numbers = [1, 2, 3, 4];
+// let updatedArgs = removeFromArray(numbers, 1);
+// console.log(updatedArgs);
 
 // Do not edit below this line
 module.exports = removeFromArray;
