@@ -6,10 +6,11 @@ const sumAll = function(number1, number2) {
 
     // use Gauss (n(n+1)/2) sum to find
     // sum of all numbers
-    
+    const gaussSum = (Math.max(...digits) * (Math.max(...digits) + 1)) / 2;
+    return gaussSum;
 };
 
-sumAll(1, 4);
+console.log(sumAll(2, 4));
 
 // Do not edit below this line
 module.exports = sumAll;
